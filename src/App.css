@@ -1,13 +1,58 @@
-.App {
-  text-align: center;
+ *{
+   padding: 0;
+   margin: 0;
+ }
+
+ .App{
+ max-width: 400px; 
+  margin-left:auto;
+ margin-right:auto; 
+margin-top: 100px;
+max-height: 100vh;
+
+ 
+}
+.Loginform{
+  display: flex;
+  flex-direction: column;
+}
+.Login{
+  border-radius:7px ;
+  width:400px ;
+  height: 30px;
+  padding: 10px;
+  margin:20px 10px 10px 0px;
+}
+.Loginbtn{
+  border-radius:7px ;
+  width:420px ;
+  height: 40px;
+  padding: 10px;
+  margin:20px 10px 10px 0px;
+}
+.forgetpassword{
+  display: flex;
+  flex-direction:row ;
+  max-width: 400px; 
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.LoginP{
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 10px;
+ margin-bottom:10px ;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Loginh2{
+margin: auto;
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+
+
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
@@ -35,4 +80,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
