@@ -2,13 +2,13 @@
    padding: 0;
    margin: 0;
  }
-
+/* this is the styling forLogin page */
  .App{
  max-width: 400px; 
   margin-left:auto;
  margin-right:auto; 
 margin-top: 100px;
-max-height: 100vh;
+/* max-height: 100vh; */
 
  
 }
@@ -48,6 +48,59 @@ max-height: 100vh;
 .Loginh2{
 margin: auto;
   margin-top: 20px;
+}
+
+/* this is the styling for signUp page */
+.SignUp{
+  margin-left:auto;
+margin-right:auto;
+padding: auto;
+max-width: 400px;
+display: flex;
+flex-direction: column;
+margin-top: 25px;
+
+}
+
+.SignUpHead{
+  margin-bottom:10px;
+  margin-top: 15px;
+}
+.SignUpForm{
+  max-width: 400px;
+  
+ 
+}
+.SignUpInput{
+width:400px;
+height: 30px;
+margin:10px 0 10px 0;
+border-radius: 7px;
+padding: 10px;
+}
+
+.TandC a{
+  color: black;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+.TandC{
+  margin-bottom:10px; 
+  margin-top:10px;
+  text-decoration: none;
+}
+.SignUpcheckbox{
+  margin: 2px;
+ 
+}
+
+.SignUpCtn button{
+height:35px;
+  width:250px;
+  border-radius:7px;
+}
+.SignUpCtn{
+  margin-top: 15px;
 }
 
 
