@@ -1,10 +1,17 @@
 import './App.css';
-
+import LandingPage from './Pages/Landing';
+import { BrowserRouter } from 'react-router-dom';
+// Switch, Route
 function App() {
   return (
-  <div>
-        
-        </div>
+    <div>
+      <BrowserRouter>
+        <LandingPage/>
+      </BrowserRouter>
+      
+      
+          
+    </div>
   )}
        
  
