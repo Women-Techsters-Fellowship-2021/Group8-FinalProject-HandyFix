@@ -9,6 +9,8 @@ function App() {
     <div>
      <BrowserRouter>
 <LandingPage/>
+<SignUp/>
+<Login/>
      </BrowserRouter>
     </div>
   )}
