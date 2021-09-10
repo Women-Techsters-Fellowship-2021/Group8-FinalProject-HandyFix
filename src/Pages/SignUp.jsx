@@ -1,54 +1,105 @@
-import React from "react"
-// import background from ;
+import "../styles/SignUp.css";
+import google from "../Images/google.jpg";
+import fb from "../Images/fb.png";
+import twitter from "../Images/twitter.png";
+import { Link } from "react-router-dom";
+import React from "react";
+import { useForm } from "react-hook-form";
 
-function SignUp() {
+const SignUp = () => {
+  const { register, handleSubmit, errors } = useForm;
+  const onSubmit = (data) => {
+    console.log(data);
+  };
+
   return (
-    <div className="Container">
-        <div className="SignUp">
-        <h2>Sign Up</h2>
-        <div className="SignUpHead">
-          <h3>Welcome to HandyFix</h3>
-        </div>
+    <div className="SignUp">
+      <h1>LOGO</h1>
+      <div className="Inner">
         <div className="SignUpForm">
-          <input
-            className="SignUpInput"
-            placeholder="Full Name"
-            type="text"
-          ></input>
-          <input
-            className="SignUpInput"
-            placeholder="Location"
-            type="text"
-          ></input>
-          <input
-            className="SignUpInput"
-            placeholder="Emial Address"
-            type="text"
-          ></input>
-          <input
-            className="SignUpInput"
-            placeholder="Password"
-            type="text"
-          ></input>
-          <input
-            className="SignUpInput"
-            placeholder="Confirm Password"
-            type="text"
-          ></input>
+          <h3> Sign In to HandyFix</h3>
+          <div className="SignUpIcon">
+            <img src={twitter} width={30} height={20} alt="" />
+            <img src={fb} width={30} height={20} alt="" />
+            <img src={google} width={30} height={20} alt="" />
+          </div>
+
+            <div>
+            <form onSubmit={handleSubmit}>
+              <label>Email</label>
+              <input
+                className="SignUpInput"
+                placeholder="@gmail"
+                type="text"
+                ref={register}
+              ></input>
+
+              <label>Password</label>
+              <input
+                className="SignUpInput"
+                placeholder="Password"
+                type="text"
+                ref={register}
+              ></input>
+              <label>Confirm password</label>
+              <input
+                className="SignUpInput"
+                placeholder="Confirm Password"
+                type="text"
+                ref={register}
+              ></input>
+            
+            <div className="TandC">
+              <div id="flexer">
+                <div id="innerFlexer">
+                  <input type="checkbox" className="SignUpcheckbox"></input>
+                  <label>Remember me?</label>
+                </div>
+                <div>
+                  {" "}
+                  <div>
+                    <Link to="#">forgot password</Link>
+                  </div>{" "}
+                </div>
+              </div>
+            </div>
+            <button type="submit" className="SignUpBtn">
+              {" "}
+              Sign in
+            </button>
+            </form>
+            </div>
+         
+          <div className="Already">
+            {" "}
+            <p>
+              Already have an account?<Link to="#">LogIn</Link>
+            </p>
+          </div>
         </div>
-        <div className="TandC">
-          <input type="checkbox" className="SignUpcheckbox" required></input>
-          <a href="">I agree to the term and condition of this project</a>
-        </div>
-        <div className="SignUpCtn">
-          <button type="submit" className="SignUpCtn">
-            Continue
+
+        <div className="Second">
+          <button type="submit" className="Con">
+            {" "}
+            Conveniency
           </button>
+          <button type="submit" className="Safe">
+            {" "}
+            Safety
+          </button>
+          <button type="submit" className="Quality">
+            {" "}
+            Quality
+          </button>
+          <div className="Secondus">
+            <p>A full value product you'll love</p>
+            <br />
+            <h4>Begin the proces!</h4>
+          </div>
         </div>
-  </div>
-  <div className="Diagram"><p>hgvhggjhgvjhftgdgcfg</p></div>
+      </div>
+      <p>jhjkhklkljkljhujgkuj</p>
     </div>
-      
   );
-}
+};
 export default SignUp;
