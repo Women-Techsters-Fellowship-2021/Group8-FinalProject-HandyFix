@@ -1,0 +1,120 @@
+
+ /* this is the styling forLogin page */
+  .App{
+  max-width: 400px; 
+   margin-left:auto;
+  margin-right:auto; 
+ margin-top: 100px;
+ 
+ 
+  
+ }
+ .Loginform{
+   display: flex;
+   flex-direction: column;
+ }
+ .Login{
+   border-radius:7px ;
+   width:400px ;
+   height: 30px;
+   padding: 10px;
+   margin:20px 10px 10px 0px;
+ }
+ .Loginbtn{
+   border-radius:7px ;
+   width:420px ;
+   height: 40px;
+   padding: 10px;
+   margin:20px 10px 10px 0px;
+ }
+ .forgetpassword{
+   display: flex;
+   flex-direction:row ;
+   max-width: 400px; 
+   justify-content: space-between;
+   margin-top: 50px;
+   margin-bottom: 50px;
+ }
+ .LoginP{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom:10px ;
+ }
+ 
+ .Loginh2{
+ margin: auto;
+   margin-top: 20px;
+ }
+ 
+ /* this is the styling for signUp page */
+ .SignUp{
+   /* margin-left:auto;
+ margin-right:auto; */
+ padding: auto;
+ width: 400px;
+ display: flex;
+ flex-direction: column;
+ margin-top: 25px;
+ border:solid;
+ width: 500px;
+ height: 600px;
+ border-radius:7px;
+
+ 
+ }
+ 
+ .SignUpHead{
+   margin-bottom:10px;
+   margin-top: 15px;
+ }
+ .SignUpForm{
+   max-width: 400px;
+   
+  
+ }
+ .SignUpInput{
+ width:400px;
+ height: 30px;
+ margin:10px 0 10px 0;
+ border-radius: 7px;
+ padding: 10px;
+ }
+ 
+ .TandC a{
+   color: black;
+   text-decoration: none;
+   margin-bottom: 15px;
+ }
+ .TandC{
+   margin-bottom:10px; 
+   margin-top:10px;
+   text-decoration: none;
+ }
+ .SignUpcheckbox{
+   margin: 2px;
+  
+ }
+ 
+ .SignUpCtn button{
+ height:35px;
+   width:250px;
+   border-radius:7px;
+ }
+ .SignUpCtn{
+   margin-top: 15px;
+ }
+
+ .Container{
+     display: grid;
+    
+      align-items: stretch;
+ }
+
+ .Diagram{
+     border: solid;
+     border-radius:7px ;
+     Width: 500px;
+     height: 600px
+      
+ }

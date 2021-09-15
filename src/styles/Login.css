@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+
+}
+.LoginForm h2 {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font: 'Roboto';
+}
+
+.Inner{
+  display: flex;
+  flex-direction: row;
+  padding: auto; 
+}
+
+.Login {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f1ebeb;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 120vh;
+}
+.Login h1{
+  margin-left: 15%;
+  margin-top: 30px;
+}
+
+.Login p{
+  margin-left:auto;
+  margin-right: auto;
+  margin-bottom: 70%;
+}
+
+.LoginForm {
+  width: 400px;
+  background-color: white;
+  margin-left: 15%;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  height: 600px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  font: 'Roboto';
+}
+.LoginSecond {
+  background-color: #5f5c5c;
+  width: 400px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  height: 600px;
+}
+.LoginInput {
+  margin-left: 30px;
+  border-radius: 5px;
+  background-color: #f3f0f0;
+  width: 250px;
+  height: 30px;
+  border-style: none;
+  padding: 7px;
+  margin-bottom: 20px;
+  border-style: none;
+  display: flex;
+  flex-direction: column;
+  font: 'Roboto';
+}
+.LoginForm label {
+  margin-left: 30px;
+}
+.LoginBtn {
+  background-color: rgb(77, 77, 221);
+  margin-left: 25px;
+  border-radius: 15px;
+  width: 150px;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #f1ebeb;
+}
+.LoginIcon {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.LoginIcon img {
+  margin: 10px;
+  border-radius: 5px;
+}
+
+.forget {
+  margin-left: 60%;
+  margin-top: 25px;
+  font: 'Roboto';
+}
+
+.LoginForm p {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  font: 'Roboto';
+}
+
+.LoginSecond h4 {
+  margin-left: 65%;
+  size: 5px;
+  color: #f1ebeb;
+}
+
+.LoginSecond p {
+  margin-top: 75%;
+  margin-left: 5%;
+  size: 5px;
+  color: #f1ebeb;
+  font: 'Roboto';
+}
+
+.para p{
+  margin-top: 70%;
+   margin-left:3% ;
+   color:black;
+   font: 'Roboto';
+}
+
+
+
