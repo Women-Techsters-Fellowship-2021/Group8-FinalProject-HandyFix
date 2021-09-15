@@ -7,8 +7,15 @@ import React from "react";
 import { useForm } from "react-hook-form";
 
 const SignUp = () => {
-  const { register, handleSubmit, errors } = useForm;
-  const onSubmit = (data) => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors }
+  } = useForm();
+
+  const onSubmit = 
+  (data) => {
+    //  e.preventDefault()
     console.log(data);
   };
 
@@ -25,29 +32,39 @@ const SignUp = () => {
           </div>
 
             <div>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit(onSubmit)}>
               <label>Email</label>
               <input
                 className="SignUpInput"
                 placeholder="@gmail"
                 type="text"
-                ref={register}
-              ></input>
+                id="Email"
+                name="Email"
+                required
+                {...register("email")}
+              />
 
               <label>Password</label>
               <input
                 className="SignUpInput"
+                type="password"
                 placeholder="Password"
-                type="text"
-                ref={register}
-              ></input>
+                id="password"
+                name="password"
+                required
+                {...register("password")}
+              />
               <label>Confirm password</label>
+
               <input
                 className="SignUpInput"
-                placeholder="Confirm Password"
-                type="text"
-                ref={register}
-              ></input>
+                type="Confirmpassword"
+                placeholder="ConfirmPassword"
+                id="Confirmpassword"
+                name="confirmpassword"
+                required
+                {...register("Comfirmpassword")}
+              />
             
             <div className="TandC">
               <div id="flexer">
@@ -58,7 +75,7 @@ const SignUp = () => {
                 <div>
                   {" "}
                   <div>
-                    <Link to="#">forgot password</Link>
+                    <Link to="#">forgot password?</Link>
                   </div>{" "}
                 </div>
               </div>
