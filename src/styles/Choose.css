@@ -1,0 +1,176 @@
+*{
+padding: 0%;
+margin: 0%;
+}
+.Choose{
+    background-color:  #f1ebeb;
+}
+
+.Second1{
+    background-color: rgb(214, 183, 188);
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-bottom: 70px;
+    margin-left: 15%;
+    margin-top: 40px;
+}
+ .Task1 p{
+     margin-top: 70px;
+     margin-left: 25px;
+ }
+ .Task2 p{
+    margin-top: 70px;
+    margin-left: 25px;
+}
+.Task3 p{
+    margin-top: 70px;
+    margin-left: 25px;
+}
+.Task4 p{
+    margin-top: 70px;
+    margin-left: 25px;
+}
+
+.Task1{
+    height: 60px;
+    background-color: #f1ebeb;
+    border-radius: 35px;
+    width: 70px;
+    margin-right: 80px;
+    margin-bottom: 10px;
+    margin-left:20px ;
+}
+
+.Task2{
+    height: 60px;
+    background-color: #f1ebeb;
+    border-radius: 35px;
+    width: 70px;
+    margin-right: 70px;
+    margin-left:70px ;
+}
+
+.Task3{
+    height: 60px;
+    background-color: #f1ebeb;
+    border-radius: 35px;
+    width: 70px;
+    margin-left:70px ;
+    margin-right: 70px;
+}
+
+.Task4{
+    height: 60px;
+    background-color: #f1ebeb;
+    border-radius: 35px;
+    width: 70px;
+    margin-left:70px ;
+    margin-right: 70px;
+}
+
+.Home{
+background-color: rgb(10, 10, 85);
+padding-bottom:20px ;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+}
+
+.Home button{
+background-color:  rgb(214, 183, 188);
+border-radius: 7px;
+width: 45px;
+height: 30px;
+}
+
+.First{
+background-color: rgb(214, 183, 188); 
+width: 80%; 
+margin-left: auto;
+margin-right: auto; 
+margin-bottom: 20px;;
+margin-top: 40px;
+height: 800px;
+}
+
+.Choosediv h3{
+margin-left:40%;
+size:20px;
+margin-bottom:20px;
+padding-top: 20px;
+}
+.First h4{
+    margin-left: 10%;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+.First p{
+    margin-left: 10%;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+}
+.Class{
+    display: flex;
+    flex-direction: row;
+    width:80%;
+    background-color: rgb(17, 17, 100);
+    margin-left: 90px;
+    margin-top:15px ;
+    height:180px;
+    margin-bottom: 20px;
+}
+.Third{
+    display: flex;
+    flex-direction: row;
+    color: #f1ebeb;
+}
+.Third button{
+   margin-left:200px ;
+    height: 30px;
+    width: 150px;
+    margin-top: 130px;
+    margin-right: 10px;
+    background-color: rgb(214, 183, 188) ;
+    margin-bottom: 10px;
+   
+}
+.portion {
+margin-top:20px ;
+width: 300px;
+}
+.image img{
+border-radius: 30px;
+margin-left: 10px;
+margin-top: 20px;
+}
+
+.portion p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.Last{
+    margin-left:90px ;
+    display: flex;
+    flex-direction: row;
+}
+.button1{
+    background-color: rgb(7, 7, 97);
+    width: 100px;
+    height:30px;
+    border-radius: 35px;
+    color: #f1ebeb;
+}
+
+.button2{
+    background-color: rgb(7, 7, 97);
+    width:100px;
+    height: 30px;
+    border-radius: 35px;
+    color: #f1ebeb;
+}
+.Last2{
+margin-left: 65%;
+}
