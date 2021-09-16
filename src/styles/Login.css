@@ -51,7 +51,7 @@
   font: 'Roboto';
 }
 .LoginSecond {
-  background-color: #5f5c5c;
+  background-color: #757171;
   width: 400px;
   margin-top: 0px;
   margin-bottom: 50px;
@@ -109,9 +109,11 @@
 }
 
 .LoginSecond h4 {
-  margin-left: 65%;
+  margin-left: 40%;
   size: 5px;
   color: #f1ebeb;
+  margin-top: 0%;
+  
 }
 
 .LoginSecond p {

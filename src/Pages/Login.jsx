@@ -7,11 +7,6 @@ import { useState } from "react";
 import "../styles/Login.css";
 
 const Login = () => {
-  // const {
-  //   register,
-  //   handleSubmit,
-  //  formState: { errors }
-  // } = useForm();
   const [loginDetails, setLoginDetails] = useState({
     email: "",
     password: "",
@@ -33,7 +28,7 @@ const Login = () => {
   
   return (
     <div>
-      {/* <Navbar/> */}
+     
       <div className="Login">
         <h1>LOGO</h1>
         <div className="Inner">
@@ -50,7 +45,7 @@ const Login = () => {
                 name="email"
                 required 
                 onChange = { handleChange }
-                // {...register("email")}
+               
               />
 
               <label>Password</label>
@@ -62,7 +57,7 @@ const Login = () => {
                 name="password"
                 required
                 onChange = { handleChange }
-                // {...register("password")}
+              
               />
               <div className="forget">
                 <Link to="#">forgot password?</Link>
@@ -79,26 +74,34 @@ const Login = () => {
               <img src={google} width={30} height={20} alt="" />
             </div>
             <p>
-              jhsdvhbsajhdbchsbgh
+              Dont have an account? 
               <b />
-              dbcghasbbhd
+              Create an Account
             </p>
           </div>
 
-          <div className="LoginSecond">
-            <div className="Para">
-              {" "}
-              <p>
-                Our community of artisans are widely sought after,
-                <br />
-                Register to be part of this community
-              </p>
-              <br />
-              <h4>Learn more...</h4>
-            </div>
+          <div className="Second">
+          <button type="submit" className="Con">
+            {" "}
+            Conveniency
+          </button>
+          <button type="submit" className="Safe">
+            {" "}
+            Safety
+          </button>
+          <button type="submit" className="Quality">
+            {" "}
+            Quality
+          </button>
+          <div className="Secondus">
+            <p>A full value product you'll love</p>
+            <br />
+            <h6>Begin the proces!</h6>
           </div>
         </div>
-        <p>jhjkhklkljkljhujgkuj</p>
+      
+        </div>
+        <p>Copyright © 2021.HandyFix. All rights reserved</p>
       </div>
     </div>
   );

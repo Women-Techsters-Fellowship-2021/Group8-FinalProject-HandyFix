@@ -164,13 +164,14 @@ margin-top: 20px;
     color: #f1ebeb;
 }
 
-.button2{
+.Last2 button{
     background-color: rgb(7, 7, 97);
     width:100px;
     height: 30px;
     border-radius: 35px;
     color: #f1ebeb;
+    margin-left: 65%;
 }
-.Last2{
+.Last2 {
 margin-left: 65%;
 }

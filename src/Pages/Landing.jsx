@@ -31,17 +31,15 @@ const LandingPage = () => {
               </p>
             </Link>
 
+            
+
             <Link to="/Login" className="second">
               <p className="log">Login</p>
             </Link>
-
-            <Link to="/SignUp" className="second">
-              <p className="log">SignUp</p>
-            </Link>
-            <button type="button" className="second" id="btn">
+            <Link to="/SignUp" ><button type="button" className="second" id="btn">
               {" "}
               Create Account
-            </button>
+            </button> </Link>
           </div>
           <div>
             <p className="hero-text">

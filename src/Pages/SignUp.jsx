@@ -126,7 +126,7 @@ const SignUp = () => {
           <div className="Already">
             {" "}
             <p>
-              Already have an account?<Link to="#">LogIn</Link>
+              Already have an account?<Link to="/Login">LogIn</Link>
             </p>
           </div>
         </div>
@@ -151,7 +151,7 @@ const SignUp = () => {
           </div>
         </div>
       </div>
-      <p>jhjkhklkljkljhujgkuj</p>
+      <p>Copyright © 2021.HandyFix. All rights reserved</p>
     </div>
   );
 };
