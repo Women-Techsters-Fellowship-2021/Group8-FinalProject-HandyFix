@@ -18,21 +18,21 @@ function Choose(){
 </div>
 
 <div className="Task2">
-    <p>Task</p>
+    <p>Location</p>
 </div>
 
 <div className="Task3">
-    <p>Task</p>
+    <p>Choose an artisan</p>
 </div>
 
 <div className="Task4">
-    <p>Task</p>
+    <p>Confirm</p>
 </div>
       </div>
     </div>
 
-    <h4>Please choose an artisan</h4>
-    <p>HandyFix is jdbjbajwerbf about you</p>
+    <h4>Please choose your preffered artisan</h4>
+    <p>HandyFix Artisans around you</p>
     <div className="Class">
         <div className="Third">
             <div className="image"> <img src={Picture} width={100} height={70} alt="" /></div>
@@ -60,8 +60,8 @@ function Choose(){
             </div>
             </div>
             <div className="Last">
-         <div> <button type="submit" className="button1">Previous</button></div>  
-<div className="Last2" > <button type="submit" className="button2 ">Next</button></div>
+    <Link to="#" >  <div> <button type="submit" className="button1">Previous</button></div> </Link> 
+  <Link to="#"><div className="Last2" > <button type="submit">Next</button></div></Link> 
  </div>
   </div>
   </div>

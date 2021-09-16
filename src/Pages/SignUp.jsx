@@ -4,20 +4,54 @@ import fb from "../Images/fb.png";
 import twitter from "../Images/twitter.png";
 import { Link } from "react-router-dom";
 import React from "react";
-import { useForm } from "react-hook-form";
+import { useState } from "react";
+import { toast  } from "react-toastify";
+
+
 
 const SignUp = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors }
-  } = useForm();
+  const [userData, setUserData] = useState({
+    email: "",
+    password: "",
+    confirmPassword: "",
+  });
 
-  const onSubmit = 
-  (data) => {
-    //  e.preventDefault()
-    console.log(data);
+  const [signUpDetails, setSignUpDetails] = useState({
+    email: "",
+    password: "",
+  });
+
+  const [validationErrorMsg, setValidationErrorMsg] = useState({
+    confirmPassword:""
+  })
+
+  const handleChange = (e) => {
+    setUserData({
+      ...userData,
+      [e.target.id]: e.target.value,
+    });
   };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // const isValid = validatePassword()
+    // if(isValid){
+    if (userData.password === userData.confirmPassword) {
+      setSignUpDetails({
+        email: userData.email,
+        password: userData.password,
+      });
+      toast.error("SignUp succesful") 
+      console.log("=====>", signUpDetails);
+      e.target.reset();
+    } else {
+      setValidationErrorMsg({
+        confirmPassword:"password does not match"
+      })
+     
+    }
+  };
+  console.log("=====>", signUpDetails);
 
   return (
     <div className="SignUp">
@@ -31,17 +65,17 @@ const SignUp = () => {
             <img src={google} width={30} height={20} alt="" />
           </div>
 
-            <div>
-            <form onSubmit={handleSubmit(onSubmit)}>
+          <div>
+            <form onSubmit={handleSubmit}>
+            
               <label>Email</label>
               <input
                 className="SignUpInput"
                 placeholder="@gmail"
                 type="text"
-                id="Email"
-                name="Email"
+                id="email"
                 required
-                {...register("email")}
+                onChange={handleChange}
               />
 
               <label>Password</label>
@@ -52,45 +86,47 @@ const SignUp = () => {
                 id="password"
                 name="password"
                 required
-                {...register("password")}
+                onChange={handleChange}
               />
               <label>Confirm password</label>
 
               <input
+
                 className="SignUpInput"
-                type="Confirmpassword"
+                type="password"
                 placeholder="ConfirmPassword"
-                id="Confirmpassword"
-                name="confirmpassword"
+                id="confirmPassword"
                 required
-                {...register("Comfirmpassword")}
+                onChange={handleChange}
               />
-            
-            <div className="TandC">
-              <div id="flexer">
-                <div id="innerFlexer">
-                  <input type="checkbox" className="SignUpcheckbox"></input>
-                  <label>Remember me?</label>
-                </div>
-                <div>
-                  {" "}
+              <small className="Error">{validationErrorMsg.confirmPassword}</small>
+
+              <div className="TandC">
+                <div id="flexer">
+                  <div id="innerFlexer">
+                    <input type="checkbox" className="SignUpcheckbox"></input>
+                    <label>Remember me?</label>
+                  </div>
                   <div>
-                    <Link to="#">forgot password?</Link>
-                  </div>{" "}
+                    {" "}
+                    <div>
+                      <Link to="#">forgot password?</Link>
+                    </div>{" "}
+                  </div>
                 </div>
               </div>
-            </div>
-            <button type="submit" className="SignUpBtn">
-              {" "}
-              Sign in
-            </button>
+              <button type="submit" className="SignUpBtn">
+                {" "}
+                Sign Up
+              </button>
+        
             </form>
-            </div>
-         
+          </div>
+
           <div className="Already">
             {" "}
             <p>
-              Already have an account?<Link to="#">LogIn</Link>
+              Already have an account?<Link to="/Login">LogIn</Link>
             </p>
           </div>
         </div>
@@ -115,7 +151,7 @@ const SignUp = () => {
           </div>
         </div>
       </div>
-      <p>jhjkhklkljkljhujgkuj</p>
+      <p>Copyright © 2021.HandyFix. All rights reserved</p>
     </div>
   );
 };
