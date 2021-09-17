@@ -280,16 +280,20 @@ section
 /* -------------------sec four--------- */
 .sec-four
 {
+    margin-top: 0;
+    border: 0;
     background-color: #E5E5E5;
     text-align: center;
     align-items: center;
+    margin-top: 0px;
+    /* border: 5px solid black; */
 
 }
 
 .sec-four h3
 {
     text-align: center;
-    padding-top: 70px;
+    /* padding-top: 50px; */
     color: #382C23;
     margin-bottom: 60px;
     font-size: 48px;
@@ -346,6 +350,7 @@ section
     justify-content: center;
     align-items: center;
     display: flex;
+    margin-top: 0px;
 }
 
 .sec-five h3
