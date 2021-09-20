@@ -1,0 +1,28 @@
+.navbar
+{
+    background-color: #3A486F;
+    font: Roboto;
+    width:100%;
+    overflow:hidden;
+    position: fixed;
+    height: 50px;
+    margin:0;
+    justify-content: center;
+    display: flex;
+
+}
+
+.navbar a
+{
+    color: #fff;
+    display: flex;
+    /* align-items: center; */
+
+    text-decoration: none;
+    /* color: black; */
+    /* font-family:inherit ; */
+    padding: 0px;
+    margin-top: 12px;
+    padding: 0px 50px 2px 10px;
+
+}
