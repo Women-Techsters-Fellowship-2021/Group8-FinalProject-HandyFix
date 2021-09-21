@@ -6,6 +6,7 @@ import drawing from '../Images/drawing.jpeg';
 import firework from '../Images/fireworks.jpeg';
 import tool from '../Images/tools.jpeg';
 import carpentary from '../Images/bg1.jpeg';
+import {HiBadgeCheck} from 'react-icons/hi';
 const LandingPage=()=>{
 
     return(
@@ -25,7 +26,7 @@ const LandingPage=()=>{
                         </>
                     
                         <>
-                        <Link className='second'><p id='log'>Login</p></Link>
+                        <Link ><p className='second' id='log'>Login</p></Link>
                         
                         <button type='button' className='second' id='btn'> Create Account</button>
                         
@@ -177,6 +178,7 @@ const LandingPage=()=>{
                     <div className='why-us'>
 
                         <div>
+                            {/* <HiBadgeCheck/> */}
                             <h4>Quality Assurance</h4>
                             <p> Our artisans registered with 
                                 HandyFix have professional certifications
@@ -184,6 +186,7 @@ const LandingPage=()=>{
                                 line with regulatory guidelines.</p>
                         </div>
                         <div>
+                            {/* <HiBadgeCheck/> */}
                             <h4>Safety</h4>
                             <p> We work assiduously to ensure our
                                 clients enjoy the best customer
@@ -192,12 +195,14 @@ const LandingPage=()=>{
                             </p>
                         </div>
                         <div>
+                            {/* <HiBadgeCheck/> */}
                             <h4>Customer Services</h4>
                             <p>
                                 Our prices are friendly and affordable.
                             </p>
                         </div>
                         <div>
+                            {/* <HiBadgeCheck/> */}
                             <h4>Conveniences</h4>
                             <p>
                             All our artisans are trained to be Health, 
@@ -206,6 +211,7 @@ const LandingPage=()=>{
                             </p>
                         </div>
                         <div>
+                            {/* <HiBadgeCheck/> */}
                             <h4>Average Prices</h4>
                             <p>
                             We provide our services giving suitable 
@@ -214,6 +220,7 @@ const LandingPage=()=>{
                             </p>
                         </div>
                         <div>
+                            {/* <HiBadgeCheck/> */}
                             <h4>Trusted Workers</h4>
                             <p>
                             Our artisans undergo thorough security

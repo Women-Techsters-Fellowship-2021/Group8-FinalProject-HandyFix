@@ -118,10 +118,38 @@ div h3
 .progress
 {
     background-color: #fff;
-    height: 200px;
+    height: 150px;
     width: 800px;
     position: absolute;
     /* justify-self: center; */
     margin:99px 330px 72px 103px;
-    border-radius: 5px; 
+    border-radius: 5px;
+    color:#C78446; 
+    font: Roboto;
+    line-height: 25px;
+    display: flex;
+    padding-top: 25px;
+}
+.user
+{
+    color:#C78446;
+    font-size: 125px;
+    /* position: absolute; */
+    margin: 0px 100px 10px 45px;
+    
+}
+.second 
+{
+   
+   /* text-decoration: none; */
+   margin-top: 5px;
+   display: flex;
+
+}
+
+.second a 
+{
+    color: #C78446;
+    padding: 15px;
+    
 }

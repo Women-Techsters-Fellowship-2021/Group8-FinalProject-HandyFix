@@ -8,8 +8,8 @@ const  Navbar = ()=>{
             {
                  (
                 <>
-                 <Link ><b>LOGOUT</b></Link>
-                 <br />
+                <Link ><b>LOGOUT</b></Link>
+                <br />
                  {/* onClick={logout} */}
                  
                 

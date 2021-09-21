@@ -7,15 +7,16 @@ import carpentary from '../Images/bg1.jpeg';
 import {Link}  from 'react-router-dom'
 import '../styles/profilePage.css'
 import Navbar from '../Components/Navbar';
+import { FaUserAlt } from 'react-icons/fa';
 
 const Profile =()=>{
     return(
         <>
         {/* <div>
 
-            <Navbar/>
-        </div> */}
+</div> */}
             <section className='profile-page'>
+                <Navbar/>
                 <div>
 
                     <h3>HandyFix</h3>
@@ -120,13 +121,24 @@ const Profile =()=>{
                     </div>
 
 
+
                     <div className='progress'>
-                        <p>Artisan: Smith John</p>
-                        <p> Task Category : Carpentary</p>
-                        <p>Progress</p>
-                        <Link className='second'><p id='log'>View full details</p></Link>
-                        <Link className='second'><p id='log'>Make a complaint</p></Link>
-                        
+                        <div className='user'>
+                            <FaUserAlt/>
+                        </div>
+                        <div>
+
+                            <p>Artisan: Smith John</p>
+                            <p> Task Category : Carpentary</p>
+                            <p>Progress</p>
+
+                            <div className='second'>
+
+                                <Link ><p >Make a complaint</p></Link>
+                                <Link><p>View full details</p></Link>
+                            </div>
+                            
+                        </div>
 
 
                     </div>
