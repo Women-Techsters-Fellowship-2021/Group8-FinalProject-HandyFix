@@ -1,6 +1,7 @@
 import './App.css';
 import LandingPage from './Pages/Landing';
 import { BrowserRouter } from 'react-router-dom';
+import Profile from './Pages/Profile';
 // import { useMediaQuery } from 'react-responsive';
 // import MediaQuery from 'react-responsive';
 
@@ -33,7 +34,8 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <LandingPage/>
+        {/* <LandingPage/> */}
+        <Profile/>
       </BrowserRouter>
       
       
