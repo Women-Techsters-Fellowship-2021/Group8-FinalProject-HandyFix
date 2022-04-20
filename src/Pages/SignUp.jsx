@@ -41,7 +41,7 @@ const SignUp = () => {
         email: userData.email,
         password: userData.password,
       });
-      toast.error("SignUp succesful") 
+      toast.success("SignUp succesful") 
       console.log("=====>", signUpDetails);
       e.target.reset();
     } else {
@@ -51,7 +51,7 @@ const SignUp = () => {
      
     }
   };
-  console.log("=====>", signUpDetails);
+  // console.log("=====>", signUpDetails);
 
   return (
     <div className="SignUp">

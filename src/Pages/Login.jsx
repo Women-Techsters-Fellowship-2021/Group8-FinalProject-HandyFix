@@ -1,9 +1,10 @@
+import React from "react";
+import { useState } from "react";
+import {toast} from "react-toastify";
 import google from "../Images/google.jpg";
 import fb from "../Images/fb.png";
 import twitter from "../Images/twitter.png";
 import { Link } from "react-router-dom";
-import React from "react";
-import { useState } from "react";
 import "../styles/Login.css";
 
 const Login = () => {
@@ -20,11 +21,12 @@ const Login = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log( "=====>", loginDetails);
+    // console.log( "=====>", loginDetails);
     setLoginDetails("")
     e.target.reset()
-  };
-  console.log( "=====>", loginDetails);
+    toast.success("Login successful, Please continue") 
+  }
+  // console.log( "=====>", loginDetails);
   
   return (
     <div>
@@ -62,12 +64,14 @@ const Login = () => {
               <div className="forget">
                 <Link to="#">forgot password?</Link>
               </div>
+            
               <button type="submit" className="LoginBtn">
                 {" "}
                 Log In
               </button>
+            
             </form>
-
+           
             <div className="LoginIcon">
               <img src={twitter} width={30} height={20} alt="" />
               <img src={fb} width={30} height={20} alt="" />
@@ -94,7 +98,7 @@ const Login = () => {
             Quality
           </button>
           <div className="Secondus">
-            <p>A full value product you'll love</p>
+            <p>A full value product you'll love...</p>
             <br />
             <h6>Begin the proces!</h6>
           </div>

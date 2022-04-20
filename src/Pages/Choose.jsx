@@ -8,7 +8,7 @@ function Choose(){
         <div className="Choose">
         <div className="First">
       
-        <div className="Home"><button>Home</button></div>
+        <div className="Home"><button>X</button></div>
     <div className="Choosediv" >
       <h3>Book Me An Artisan</h3>
       <div className="Second1"
@@ -60,8 +60,8 @@ function Choose(){
             </div>
             </div>
             <div className="Last">
-    <Link to="#" >  <div> <button type="submit" className="button1">Previous</button></div> </Link> 
-  <Link to="#"><div className="Last2" > <button type="submit">Next</button></div></Link> 
+    <div> <Link to="#" > <button type="submit" className="button1">Previous</button> </Link> </div>
+  <div className="Last2" ><Link to="#"> <button type="submit">Next</button></Link></div> 
  </div>
   </div>
   </div>

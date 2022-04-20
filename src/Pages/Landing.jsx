@@ -31,15 +31,15 @@ const LandingPage = () => {
               </p>
             </Link>
 
-            
-
             <Link to="/Login" className="second">
               <p className="log">Login</p>
             </Link>
-            <Link to="/SignUp" ><button type="button" className="second" id="btn">
-              {" "}
-              Create Account
-            </button> </Link>
+            <Link to="/SignUp">
+              <button type="button" className="second" id="btn">
+                {" "}
+                Create Account
+              </button>{" "}
+            </Link>
           </div>
           <div>
             <p className="hero-text">
@@ -59,30 +59,32 @@ const LandingPage = () => {
       <section className="sec-one">
         <h3>HandyFix at a glance</h3>
         <div id="sec1-text">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Repudiandae sequi impedit, vero unde nulla velit aspernatur eveniet
-            veritatis minima , amet eum numquam ipsum facere necessitatibus
-            reprehenderit nam quis architecto. Voluptas.
-          </p>
-          <p className="pa-mar">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Repudiandae sequi impedit, vero unde nulla velit aspernatur eveniet
-            veritatis minima , amet eum numquam ipsum facere necessitatibus
-            reprehenderit nam quis architecto. Voluptas.
-          </p>
-          <p className="pa-mar">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Repudiandae sequi impedit, vero unde nulla velit aspernatur eveniet
-            veritatis minima , amet eum numquam ipsum facere necessitatibus
-            reprehenderit nam quis architecto. Voluptas.
-          </p>
-          <p className="pa-mar">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Repudiandae sequi impedit, vero unde nulla velit aspernatur eveniet
-            veritatis minima , amet eum numquam ipsum facere necessitatibus
-            reprehenderit nam quis architecto. Voluptas.
-          </p>
+          <ul>
+            <li> Biggest secure platform to find skilled artisans</li>
+            <li>Quality services at affordable prices</li>
+            <li>Excellent service delivery in time</li>
+            <li> Every need is fixed</li>
+          </ul>
+
+          <ul className="pa-mar">
+            <li> Biggest secure platform to find skilled artisans</li>
+            <li>Quality services at affordable prices</li>
+            <li>Excellent service delivery in time</li>
+            <li> Every need is fixed</li>
+          </ul>
+
+          <ul className="pa-mar">
+            <li> Biggest secure platform to find skilled artisans</li>
+            <li>Quality services at affordable prices</li>
+            <li>Excellent service delivery in time</li>
+            <li> Every need is fixed</li>
+          </ul>
+          <ul className="pa-mar">
+            <li> Biggest secure platform to find skilled artisans</li>
+            <li>Quality services at affordable prices</li>
+            <li>Excellent service delivery in time</li>
+            <li> Every need is fixed</li>
+          </ul>
         </div>
         <div>
           <button type="submit" className="bk-btn">
